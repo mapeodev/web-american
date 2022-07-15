@@ -153,3 +153,5 @@ $RECYCLE.BIN/
 
 /src/css
 .vscode/
+
+.idea/
