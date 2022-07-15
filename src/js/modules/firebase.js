@@ -1,14 +1,14 @@
-import firebase from 'firebase';
-import 'firebase/firestore'
+import firebase from "firebase";
+import "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyArvXAou1wdX2sQNQLqhZD9SBWiUxjbdgA",
-  authDomain: "dentino-web.firebaseapp.com",
-  projectId: "dentino-web",
-  storageBucket: "dentino-web.appspot.com",
-  messagingSenderId: "200524047422",
-  appId: "1:200524047422:web:1aa6f9958a256203019d6f",
-  measurementId: "G-X177X5LRXL"
+  apiKey: "AIzaSyDGozeSY0PNbMpCOWE9JUraYOO_kdbhJTQ",
+  authDomain: "web-american.firebaseapp.com",
+  projectId: "web-american",
+  storageBucket: "web-american.appspot.com",
+  messagingSenderId: "234672166311",
+  appId: "1:234672166311:web:9e3009344088e0c6289282",
+  measurementId: "G-KE0C97ZR1D",
 };
 // Initialize Firebase
 if (firebase.apps.length === 0) {
@@ -17,4 +17,5 @@ if (firebase.apps.length === 0) {
 }
 
 export const firestore = firebase.firestore();
-export const toFirebaseTimestamp = (date) => firebase.firestore.Timestamp.fromDate(date);
+export const toFirebaseTimestamp = (date) =>
+  firebase.firestore.Timestamp.fromDate(date);
