@@ -2,7 +2,7 @@
   overflow: hidden;
   position: relative;
   width: 100%;
-  min-height: calc(100vh - #{$headerHeight});
+  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   &--with-title {
