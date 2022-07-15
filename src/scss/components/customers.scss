@@ -68,7 +68,7 @@
       margin-right: 1rem;
     }
     position: relative;
-    max-width: 25rem;
+    width: 25rem;
     background-color: $cl-sky-blue;
     padding: 1.5rem;
     border-radius: 40px;
@@ -89,12 +89,75 @@
     font-size: 1.2rem;
     text-align: end;
   }
+}
+
+@keyframes center-to-right {
+  from {
+    opacity: 100;
+    transform: scale(1.2) translateX(-8rem);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1) translateX(0);
+  }
+}
+
+@keyframes left-to-center {
+  from {
+    transform: scale(1) translateX(-27.5rem);
+  }
+  to {
+    transform: scale(1.2) translateX(0);
+  }
+}
+
+@keyframes in {
+  from {
+    opacity: 0;
+    transform: translateX(-25rem);
+  }
+  to {
+    opacity: 100;
+    transform: translateX(0);
+  }
+}
+
+.customer-stories {
+  &__items {
+    position: relative;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    min-height: 18rem;
+  }
+  &__item {
+    position: relative;
+    transition-duration: 500ms;
+    &--active {
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      animation: left-to-center ease 1s forwards;
+    }
+    &--left {
+      position: absolute;
+      right: 0;
+      animation: center-to-right ease 1s forwards;
+      opacity: 0;
+    }
+    &--right {
+      position: absolute;
+      left: 0;
+      opacity: 0;
+    }
+  }
   &__controls {
     display: flex;
     justify-content: center;
     gap: .5rem;
-    margin-left: -10rem;
-    margin-top: 1rem;
     @media screen and (max-width: $breakpoint-laptop) {
       margin-left: 0;
     }
@@ -106,6 +169,9 @@
     border-radius: 50%;
     cursor: pointer;
     &:hover {
+      background-color: $cl-blue;
+    }
+    &--active {
       background-color: $cl-blue;
     }
   }
