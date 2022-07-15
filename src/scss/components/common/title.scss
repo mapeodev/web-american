@@ -11,14 +11,6 @@
   text-align: center;
   font-size: 1.5rem;
   &-container {
-    & > * {
-      background-color: $cl-blue;
-    }
-    &--white {
-      & > * {
-        background-color: $cl-white;
-      }
-    }
     & .title {
       background-color: inherit;
     }

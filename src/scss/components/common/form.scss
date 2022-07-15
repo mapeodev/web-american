@@ -8,20 +8,20 @@
   &__input {
     padding: .5rem .8rem;
     border-radius: 8px;
-    border: solid 1px $cl-green;
+    border: solid 1px $cl-yellow;
     margin: .5rem 0;
     box-sizing: border-box;
     font-size: 1.2rem;
-    font-family: $avenirDemi;
+    font-family: $leagueSpartan;
     &::placeholder {
-      font-family: $avenirDemi;
+      font-family: $leagueSpartan;
       font-weight: 100;
     }
   }
   &__button {
     width: 100%;
     min-width: 10rem;
-    background-color: $cl-green;
+    background-color: $cl-blue;
     font-size: 1rem;
     border-radius: 30px;
     font-weight: bold;

@@ -1,29 +1,19 @@
 @font-face {
-  font-family: 'AvenirNextLTPro';
-  src: url('../assets/fonts/AvenirNextLTPro-Bold.woff2') format('woff2'),
-       url('../assets/fonts/AvenirNextLTPro-Bold.woff') format('woff');
-  font-weight: bold;
+  font-family: 'Bebas Neue';
+  src: url('../assets/fonts/BebasNeuePro-Bold.woff2') format('woff2'),
+       url('../assets/fonts/BebasNeuePro-Bold.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
-  font-family: 'AvenirNextLTPro Demi';
-  src: url('../assets/fonts/AvenirNextLTPro-Demi.woff2') format('woff2'),
-       url('../assets/fonts/AvenirNextLTPro-Demi.woff') format('woff');
+  font-family: 'League Spartan';
+  src: url('../assets/fonts/leaguespartan-bold.woff2') format('woff2'),
+       url('../assets/fonts/leaguespartan-bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 
-@font-face {
-  font-family: 'AvenirNextLTPro';
-  src: url('../assets/fonts/AvenirNextLTPro-Demi.woff2') format('woff2'),
-       url('../assets/fonts/AvenirNextLTPro-Demi.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-$avenirPro: 'AvenirNextLtPro', Arial, sans-serif;
-$avenirDemi: 'AvenirNextLtPro Demi', Arial, sans-serif;
+$bebasNeue: 'Bebas Neue', Arial, sans-serif;
+$leagueSpartan: 'League Spartan', Arial, sans-serif;
