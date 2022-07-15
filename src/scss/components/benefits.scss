@@ -1,0 +1,68 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+  max-width: $breakpoint-desktop + $breakpoint-mobile;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  &__title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 8rem;
+    color: $cl-blue;
+    & h2 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-variant-caps: all-small-caps;
+      text-align: center;
+      padding: .5rem;
+    }
+    @media screen and (max-width: $breakpoint-tablet) {
+      min-height: 16rem;
+      & h2 {
+        
+      }
+    }
+  }
+  &__call-to-action {
+    display: flex;
+    justify-content: center;
+    font-variant-caps: all-small-caps;
+    & a {
+      padding: 0.1rem 1rem .5rem 1rem;
+    }
+  }
+}
+
+.benefit {
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 2rem;
+  height: auto;
+  &__image {
+    position: relative;
+    width: 12rem;
+    aspect-ratio: 16 / 9;
+    transition-duration: 150ms;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__text {
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
