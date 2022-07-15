@@ -1,0 +1,11 @@
+.info {
+  background-color: $cl-blue;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  & p {
+    max-width: $breakpoint-desktop;
+    margin: 0 auto;
+  }
+}
