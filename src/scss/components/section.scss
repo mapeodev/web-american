@@ -26,6 +26,16 @@
       max-height: 20rem;
       box-sizing: border-box;
     }
+    &--left-align {
+      align-items: start;
+    }
+  }
+  &__row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    grid-area: title;
   }
   @media screen and (max-width: $breakpoint-desktop) {
     height: auto;
