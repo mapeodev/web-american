@@ -75,6 +75,9 @@
     font-size: 1.5rem;
     color: $cl-blue;
     margin-left: -10rem;
+    @media screen and (max-width: $breakpoint-laptop) {
+      width: 15rem;
+    }
     &-icon {
       left: 0;
       top: -2rem;
@@ -130,7 +133,7 @@
     align-items: center;
     justify-content: center;
     width: 50rem;
-    min-height: 18rem;
+    min-height: 22rem;
   }
   &__item {
     position: relative;
