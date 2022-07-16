@@ -1,0 +1,83 @@
+.presentation {
+  &__header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    @media screen and (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+      margin: 2rem 0;
+    }
+    &__column {
+      width: 50%;
+      padding: 0 3rem;
+      @media screen and (max-width: $breakpoint-tablet) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      &--center {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  &__contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+  }
+  &__description {
+    margin: auto 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin: auto 1rem;
+    }
+  }
+  &__contactForm {
+
+  }
+
+  &__text {
+    font-family: $bebasNeue;
+  }
+  &__title {
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin: 1rem 0;
+      & h1 {
+        margin: 0;
+      }
+    }
+  }
+
+  &__logo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+    height: 6rem;
+    overflow: hidden;
+  }
+
+  &__benefitsList {
+    & ul {
+      padding: 0;
+    }
+    & li {
+      list-style: none;
+    }
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin: 1rem 0;
+    }
+  }
+
+
+
+}

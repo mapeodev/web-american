@@ -8,6 +8,7 @@
 @import "./components/common/title.scss";
 @import "./components/common/form.scss";
 @import "./components/common/spinner";
+@import "./components/common/icon.scss";
 
 // Componentes
 @import "./components/section.scss";
@@ -16,6 +17,9 @@
 @import "./components/info.scss";
 @import "./components/customers.scss";
 @import "./components/contactForm";
+@import "./components/presentation";
+@import "./components/about";
+@import "./components/programs";
 
 body {
   font-family: $leagueSpartan;

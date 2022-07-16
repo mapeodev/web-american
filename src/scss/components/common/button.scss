@@ -14,4 +14,10 @@
     background-color: $cl-yellow;
     color: $cl-black;
   }
+  &--bordered {
+    border: 1px solid $cl-white;
+  }
+  &--small {
+    font-size: 1rem;
+  }
 }

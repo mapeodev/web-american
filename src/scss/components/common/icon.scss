@@ -1,0 +1,18 @@
+.faIcon {
+
+  font-size: .8rem;
+  margin: auto .5rem;
+  &--circle {
+    border-radius: 50%;
+    color: $cl-white;
+
+  }
+  &--black {
+    background: $cl-black;
+    border: solid .25rem $cl-black;
+  }
+  &--blue {
+    background: $cl-blue;
+    border: solid .25rem $cl-blue;
+  }
+}
