@@ -106,6 +106,8 @@
                   placeholder="E-mail"
                   type="email"
                   name="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="Por favor, ingrese un correo válido."
                   required
                 />
                 <label class="form__label">Teléfono</label>
@@ -114,6 +116,8 @@
                   placeholder="Teléfono"
                   type="tel"
                   name="phone"
+                  pattern="[0-9]{9}"
+                  title="Por favor, ingrese un teléfono válido."
                 />
                 <label class="form__label"
                   >Cuéntanos qué meta lograrás cuando domines el inglés</label
