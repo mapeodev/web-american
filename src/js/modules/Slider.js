@@ -22,7 +22,7 @@ class Slider {
     sliderItem.classList.add("customer-stories__item");
     sliderIcon.classList.add("image");
     sliderIcon.classList.add("customers__message-box-icon");
-    sliderIcon.src = "/assets/img/mensaje icono.png";
+    sliderIcon.src = "assets/img/mensaje icono.png";
     sliderMessage.classList.add("customers__text");
     sliderStorieAuthor.classList.add("customers__author");
 
