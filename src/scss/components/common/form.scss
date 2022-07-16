@@ -15,6 +15,7 @@
     &::placeholder {
       font-family: $bebasNeue;
       font-weight: normal;
+      color: $cl-gray-placeholder;
     }
   }
   &__button {
@@ -23,9 +24,11 @@
     background-color: $cl-yellow;
     color: $cl-blue;
     border-radius: 0;
-
+    font-variant-caps: all-small-caps;
     margin-top: .5rem;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding-top: .5rem;
     font-family: $leagueSpartan;
     font-weight: 100;
   }

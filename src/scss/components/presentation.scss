@@ -1,4 +1,6 @@
 .presentation {
+  padding-bottom: 2rem;
+  grid-template-rows: minmax(auto, 6rem);
   &__header {
     position: relative;
     display: flex;
@@ -7,6 +9,7 @@
     justify-content: space-between;
     width: 100%;
     max-width: 100%;
+    margin-top: 1rem;
     @media screen and (max-width: $breakpoint-tablet) {
       flex-direction: column;
       margin: 2rem 0;
@@ -30,6 +33,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: fit-content;
+    margin-top: 2rem;
   }
   &__description {
     margin: auto 3rem;
@@ -44,13 +48,42 @@
   &__contactForm {
 
   }
+  &__list {
+    font-size: 1.5rem;
+    & li {
+      position: relative;
+      margin-left: 2.5rem;
+    }
+    & .faIcon {
+      position: absolute;
+      left: -2rem;
+      top: .5rem;
+      margin: auto 0;
+      height: 1rem;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 
   &__text {
     font-family: $bebasNeue;
+    font-size: 2rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+      text-align: center;
+    }
   }
   &__title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-variant-caps: all-small-caps;
+    & h1 {
+      margin: 0;
+    }
     @media screen and (max-width: $breakpoint-tablet) {
       margin: 1rem 0;
+      text-align: center;
       & h1 {
         margin: 0;
       }
@@ -59,11 +92,14 @@
 
   &__logo {
     position: relative;
-    display: flex;
-    flex-direction: column;
     width: 14rem;
-    height: 6rem;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
+    margin: 3rem;
+    margin-top: 6rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin: 0 auto;
+    }
   }
 
   &__benefitsList {

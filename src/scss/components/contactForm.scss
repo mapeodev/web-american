@@ -2,15 +2,21 @@
   background: $cl-blue;
   color: $cl-white;
   padding: 3rem;
-
+  padding-top: 1rem;
+  max-width: 25rem;
   &__title {
     text-align: center;
     font-family: $leagueSpartan;
+    font-variant-caps: all-small-caps;
+    font-size: 2rem;
+    margin-bottom: 0;
   }
   &__description {
     text-align: center;
     font-family: $bebasNeue;
     font-weight: 400;
+    font-size: 1.5rem;
+    margin: .5rem 0 1rem 0;
   }
 }
 
