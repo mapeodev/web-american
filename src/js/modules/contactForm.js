@@ -5,7 +5,7 @@ const submitForm = async (values) => {
   const contactDbRef = firestore.collection('asesoriasAgendadas');
   const consultation = contactDbRef.doc();
   await consultation.set({
-    email, message, names, phone, fecha: toFirebaseTimestamp(new Date())
+    email, mensaje: message, nombres: names, telefono: phone, fecha: toFirebaseTimestamp(new Date())
   });
 }
 
