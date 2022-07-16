@@ -1,4 +1,4 @@
-# Web Dentino
+# Web American Language Academy
 
 Repositorio de código de maquetado del mockup del sitio web de dentino
 
