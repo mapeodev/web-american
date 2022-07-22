@@ -1,6 +1,9 @@
 .presentation {
   padding-bottom: 2rem;
   grid-template-rows: minmax(auto, 6rem);
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding-bottom: 0;
+  }
   &__header {
     position: relative;
     display: flex;
