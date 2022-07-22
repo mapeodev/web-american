@@ -91,13 +91,14 @@
                 Regístrate y nuestros profesores te explicarán nuestro método y
                 cómo podemos ayudarte.
               </p>
-              <form class="form contactForm__form">
+              <form id="contactForm" class="form contactForm__form">
                 <label class="form__label">Nombre</label>
                 <input
                   class="form__input"
                   placeholder="Nombre"
                   type="text"
                   name="names"
+                  required
                 />
                 <label class="form__label">E-mail</label>
                 <input
@@ -105,6 +106,9 @@
                   placeholder="E-mail"
                   type="email"
                   name="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="Por favor, ingrese un correo válido."
+                  required
                 />
                 <label class="form__label">Teléfono</label>
                 <input
@@ -112,6 +116,8 @@
                   placeholder="Teléfono"
                   type="tel"
                   name="phone"
+                  pattern="[0-9]{9}"
+                  title="Por favor, ingrese un teléfono válido."
                 />
                 <label class="form__label"
                   >Cuéntanos qué meta lograrás cuando domines el inglés</label
@@ -121,6 +127,7 @@
                   placeholder="Cuéntanos qué meta lograrás cuando domines el inglés"
                   name="message"
                   rows="4"
+                  required
                 ></textarea>
                 <button class="button form__button" type="submit">
                   Agenda una asesoría gratis
@@ -136,7 +143,15 @@
           <h2>¿Cómo te podemos ayudar?</h2>
         </div>
         <div class="section__body about__body">
-          <div class="about__video">AQUÍ DEBERÍA HABER UN VIDEO</div>
+          <iframe
+            width="949"
+            height="534"
+            src="https://www.youtube.com/embed/wke-QliiaxY"
+            title="Anuncio American Language Academy"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
           <div class="section__footer benefits__call-to-action">
             <a href="#contacto" class="button">Agenda una asesoría gratis</a>
           </div>
@@ -309,6 +324,16 @@
           <div class="customers__video">
             <div class="customers__player">
               <img src="assets/img/video.png" />
+              <iframe
+                class="iframe"
+                width="350"
+                height="622"
+                src="https://www.youtube.com/embed/HW5pXkYV3Sc"
+                title="Testimonio Max Yanac Países Bajos"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>

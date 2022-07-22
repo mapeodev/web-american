@@ -1,3 +1,4 @@
+import initContactForm from "./modules/contactForm";
 import Slider from "./modules/Slider";
 
 const customerStories = [
@@ -17,6 +18,7 @@ const customerStories = [
 ];
 document.addEventListener("readystatechange", () => {
   if (document.readyState == "complete") {
+    initContactForm('contactForm');
     const slider = new Slider(customerStories);
     slider.initSlider();
   }

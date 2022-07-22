@@ -33,3 +33,30 @@
     font-weight: 100;
   }
 }
+
+.success-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  & i {
+    font-size: 5rem;
+    color: $cl-yellow;
+    margin: 2rem auto;
+    animation: show ease 2s forwards;
+
+  }
+  &__message {
+    text-align: center;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
