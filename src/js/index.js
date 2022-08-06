@@ -65,3 +65,39 @@ resetCard1.addEventListener("click", (ev) => {
   ev.preventDefault();
   flipCard("card-1");
 });
+
+const flipCard2 = document.getElementById("flip-card-2");
+const resetCard2 = document.getElementById("reset-card-2");
+flipCard2.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  flipCard("card-2");
+});
+
+resetCard2.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  flipCard("card-2");
+});
+
+const flipCard3 = document.getElementById("flip-card-3");
+const resetCard3 = document.getElementById("reset-card-3");
+flipCard3.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  flipCard("card-3");
+});
+
+resetCard3.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  flipCard("card-3");
+});
+
+const flipCard4 = document.getElementById("flip-card-4");
+const resetCard4 = document.getElementById("reset-card-4");
+flipCard4.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  flipCard("card-4");
+});
+
+resetCard4.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  flipCard("card-4");
+});
