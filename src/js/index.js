@@ -16,6 +16,7 @@ const customerStories = [
     author: "Carlos Carreño",
   },
 ];
+
 document.addEventListener("readystatechange", () => {
   if (document.readyState == "complete") {
     initContactForm("contactForm");
@@ -44,4 +45,23 @@ aboutPlayButton.addEventListener("click", (ev) => {
   document.getElementById("about-cover").classList.add("hidden");
   document.getElementById("about-video").classList.add("about__video--playing");
   aboutPlayButton.classList.add("hidden");
+});
+
+const flipCard = (cardId) => {
+  const card = document.getElementById(cardId);
+  if (card.classList.contains("teachers__card--flipped"))
+    card.classList.remove("teachers__card--flipped");
+  else card.classList.add("teachers__card--flipped");
+};
+
+const flipCard1 = document.getElementById("flip-card-1");
+const resetCard1 = document.getElementById("reset-card-1");
+flipCard1.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  flipCard("card-1");
+});
+
+resetCard1.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  flipCard("card-1");
 });
