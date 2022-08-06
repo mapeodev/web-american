@@ -24,6 +24,7 @@
     @media screen and (max-width: $breakpoint-tablet) {
       min-height: 10rem;
       line-height: 2.5rem;
+      margin: 1.2rem 0;
       padding: 0 .5rem;
     }
   }
@@ -56,7 +57,43 @@
     aspect-ratio: 9 / 16;
     max-width: 100%;
     margin: 0 auto;
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.3;
+      z-index: 99;
+    }
+    &--playing {
+      &:before {
+        content: none;
+      }
+    }
+    &-video-cover {
+      position: relative;
+    }
+    &-button {
+      position:absolute;
+      z-index:666;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      background-color:transparent;
+      border:0;
+      font-size: 3rem;
+      color: white;
+      aspect-ratio: 1 / 1;
+      cursor: pointer;
+    }
   }
+  
   &__message-box {
     @media screen and (max-width: $breakpoint-laptop) {
       margin-top: 5rem;

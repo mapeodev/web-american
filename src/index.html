@@ -9,7 +9,7 @@
     </title>
     <link
       rel="shortcut icon"
-      href="assets/icons/favicon.png"
+      href="assets/icons/favicon.ico"
       type="image/x-icon"
     />
     <script
@@ -31,15 +31,19 @@
             >
               <div class="presentation__contactInfo">
                 <div>
-                  <i
-                    class="faIcon faIcon--circle faIcon--black fas fa-phone"
-                  ></i
+                  <span
+                    class="faIcon faIcon--circle faIcon--black"
+                    style="display: inline-flex"
+                  >
+                    <i class="fas fa-phone"></i></span
                   ><a href="tel:+51987890386">987 890 386</a>
                 </div>
                 <div>
-                  <i
-                    class="faIcon faIcon--circle faIcon--black fas fa-envelope"
-                  ></i
+                  <span
+                    class="faIcon faIcon--circle faIcon--black"
+                    style="display: inline-flex"
+                  >
+                    <i class="fas fa-envelope"></i></span
                   ><a href="mailto:americanlanguage@gmail.com"
                     >americanlanguage@gmail.com</a
                   >
@@ -56,12 +60,14 @@
             <div class="presentation__benefitsList">
               <p class="presentation__text">
                 Nuestra metodología práctica y conversacional te ayudará a ser
-                capaz de
+                capaz de:
               </p>
               <ul class="presentation__list">
                 <li>
-                  <i class="faIcon faIcon--circle faIcon--blue fas fa-check"></i
-                  >Mejorar tu fluidez con Nativos.
+                  <span class="faIcon faIcon--circle faIcon--blue">
+                    <i class="fas fa-check"></i
+                  ></span>
+                  Mejorar tu fluidez con Nativos.
                 </li>
                 <li>
                   <i class="faIcon faIcon--circle faIcon--blue fas fa-check"></i
@@ -143,15 +149,27 @@
           <h2>¿Cómo te podemos ayudar?</h2>
         </div>
         <div class="section__body about__body">
-          <iframe
-            width="949"
-            height="534"
-            src="https://www.youtube.com/embed/wke-QliiaxY"
-            title="Anuncio American Language Academy"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div class="about__video" id="about-video">
+            <img
+              id="about-cover"
+              class="about__video-cover"
+              src="assets/img/video.png"
+            />
+            <button class="about__video-button" id="about-play-button">
+              <i class="fas fa-solid fa-play"></i>
+            </button>
+            <iframe
+              id="about-iframe"
+              class="iframe hidden"
+              width="949"
+              height="534"
+              src="https://www.youtube.com/embed/wke-QliiaxY"
+              title="Anuncio American Language Academy"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
           <div class="section__footer benefits__call-to-action">
             <a href="#contacto" class="button">Agenda una asesoría gratis</a>
           </div>
@@ -275,6 +293,133 @@
           <a href="#contacto" class="button">Agenda una asesoría gratis</a>
         </div>
       </section>
+      <section class="section teachers">
+        <!-- Sección de tarjetas de docentes -->
+        <div class="section__title teachers__title">
+          <h2>CONOCE A NUESTROS DOCENTES NATIVOS Y BILINGÜES</h2>
+        </div>
+        <div class="teachers__cards">
+          <div class="teachers__card" id="card-1">
+            <div class="teachers__card-face teachers__card-front">
+              <div class="teachers__card-image">
+                <img src="assets/img/teacher.png" />
+              </div>
+              <div class="teachers__card-details">
+                <div class="teachers__card-name">Emilia Clark</div>
+                <div class="teachers__card-location">Texas, USA</div>
+                <div class="teachers__card-flag">
+                  <img src="assets/img/bandera.png" />
+                </div>
+              </div>
+              <button id="flip-card-1" class="teachers__card-button">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+            <div class="teachers__card-face teachers__card-back">
+              <h3 class="teachers__card-btitle">Certificado OST</h3>
+              <p class="teachers__card-btext">
+                Tengo 7 años de experiencia enseñando en Open English. Después
+                de pasar tiempo como voluntaria con hablantes nativos de
+                español, combiné los dos y me convertí en profesora del curso.
+              </p>
+              <button id="reset-card-1" class="teachers__card-button--reset">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+          </div>
+
+          <div class="teachers__card" id="card-2">
+            <div class="teachers__card-face teachers__card-front">
+              <div class="teachers__card-image">
+                <img src="assets/img/teacher.png" />
+              </div>
+              <div class="teachers__card-details">
+                <div class="teachers__card-name">Emilia Clark</div>
+                <div class="teachers__card-location">Texas, USA</div>
+                <div class="teachers__card-flag">
+                  <img src="assets/img/bandera.png" />
+                </div>
+              </div>
+              <button id="flip-card-2" class="teachers__card-button">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+            <div class="teachers__card-face teachers__card-back">
+              <h3 class="teachers__card-btitle">Certificado OST</h3>
+              <p class="teachers__card-btext">
+                Tengo 7 años de experiencia enseñando en Open English. Después
+                de pasar tiempo como voluntaria con hablantes nativos de
+                español, combiné los dos y me convertí en profesora del curso.
+              </p>
+              <button id="reset-card-2" class="teachers__card-button--reset">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+          </div>
+          <div class="teachers__card" id="card-3">
+            <div class="teachers__card-face teachers__card-front">
+              <div class="teachers__card-image">
+                <img src="assets/img/teacher.png" />
+              </div>
+              <div class="teachers__card-details">
+                <div class="teachers__card-name">Emilia Clark</div>
+                <div class="teachers__card-location">Texas, USA</div>
+                <div class="teachers__card-flag">
+                  <img src="assets/img/bandera.png" />
+                </div>
+              </div>
+              <button id="flip-card-3" class="teachers__card-button">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+            <div class="teachers__card-face teachers__card-back">
+              <h3 class="teachers__card-btitle">Certificado OST</h3>
+              <p class="teachers__card-btext">
+                Tengo 7 años de experiencia enseñando en Open English. Después
+                de pasar tiempo como voluntaria con hablantes nativos de
+                español, combiné los dos y me convertí en profesora del curso.
+              </p>
+              <button id="reset-card-3" class="teachers__card-button--reset">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+          </div>
+          <div class="teachers__card" id="card-4">
+            <div class="teachers__card-face teachers__card-front">
+              <div class="teachers__card-image">
+                <img src="assets/img/teacher.png" />
+              </div>
+              <div class="teachers__card-details">
+                <div class="teachers__card-name">Emilia Clark</div>
+                <div class="teachers__card-location">Texas, USA</div>
+                <div class="teachers__card-flag">
+                  <img src="assets/img/bandera.png" />
+                </div>
+              </div>
+              <button id="flip-card-4" class="teachers__card-button">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+            <div class="teachers__card-face teachers__card-back">
+              <h3 class="teachers__card-btitle">Certificado OST</h3>
+              <p class="teachers__card-btext">
+                Tengo 7 años de experiencia enseñando en Open English. Después
+                de pasar tiempo como voluntaria con hablantes nativos de
+                español, combiné los dos y me convertí en profesora del curso.
+              </p>
+              <button id="reset-card-4" class="teachers__card-button--reset">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <p>
+          Los profesionales que dominan un inglés fluído pueden ganar entre 26%
+          y 50% más de su salario actual según Harvard Business Review.
+        </p>
+      </section>
       <section class="section brands">
         <div class="section__title brands__title">
           <h2>Con el respaldo de</h2>
@@ -310,22 +455,27 @@
           </div>
         </div>
       </section>
-      <section class="info">
-        <p>
-          Los profesionales que dominan un inglés fluído pueden ganar entre 26%
-          y 50% más de su salario actual según Harvard Business Review.
-        </p>
-      </section>
       <section class="section section--with-title customers">
         <div class="section__column--title customers__title">
           <h2>Nuestros alumnos confían en nosotros</h2>
         </div>
         <div class="section__column">
           <div class="customers__video">
-            <div class="customers__player">
-              <img src="assets/img/video.png" />
+            <div class="customers__player" id="customers-player">
+              <img
+                id="customers-cover"
+                class="customers__player-video-cover"
+                src="assets/img/video2.png"
+              />
+              <button
+                class="customers__player-button"
+                id="customers__play-button"
+              >
+                <i class="fas fa-solid fa-play"></i>
+              </button>
               <iframe
-                class="iframe"
+                id="customers-iframe"
+                class="iframe hidden"
                 width="350"
                 height="622"
                 src="https://www.youtube.com/embed/HW5pXkYV3Sc"

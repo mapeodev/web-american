@@ -13,6 +13,7 @@
 // Componentes
 @import "./components/section.scss";
 @import "./components/benefits.scss";
+@import "./components/teachers.scss";
 @import "./components/brands.scss";
 @import "./components/info.scss";
 @import "./components/customers.scss";
@@ -60,6 +61,11 @@ button {
   bottom: 0;
   display: block;
   inset: 0px;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
 }
 
 img {
