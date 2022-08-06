@@ -9,7 +9,7 @@
     </title>
     <link
       rel="shortcut icon"
-      href="assets/icons/favicon.png"
+      href="assets/icons/favicon.ico"
       type="image/x-icon"
     />
     <script
@@ -149,15 +149,27 @@
           <h2>¿Cómo te podemos ayudar?</h2>
         </div>
         <div class="section__body about__body">
-          <iframe
-            width="949"
-            height="534"
-            src="https://www.youtube.com/embed/wke-QliiaxY"
-            title="Anuncio American Language Academy"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div class="about__video" id="about-video">
+            <img
+              id="about-cover"
+              class="about__video-cover"
+              src="assets/img/video.png"
+            />
+            <button class="about__video-button" id="about-play-button">
+              <i class="fas fa-solid fa-play"></i>
+            </button>
+            <iframe
+              id="about-iframe"
+              class="iframe hidden"
+              width="949"
+              height="534"
+              src="https://www.youtube.com/embed/wke-QliiaxY"
+              title="Anuncio American Language Academy"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
           <div class="section__footer benefits__call-to-action">
             <a href="#contacto" class="button">Agenda una asesoría gratis</a>
           </div>
@@ -328,10 +340,21 @@
         </div>
         <div class="section__column">
           <div class="customers__video">
-            <div class="customers__player">
-              <img src="assets/img/video.png" />
+            <div class="customers__player" id="customers-player">
+              <img
+                id="customers-cover"
+                class="customers__player-video-cover"
+                src="assets/img/video2.png"
+              />
+              <button
+                class="customers__player-button"
+                id="customers__play-button"
+              >
+                <i class="fas fa-solid fa-play"></i>
+              </button>
               <iframe
-                class="iframe"
+                id="customers-iframe"
+                class="iframe hidden"
                 width="350"
                 height="622"
                 src="https://www.youtube.com/embed/HW5pXkYV3Sc"

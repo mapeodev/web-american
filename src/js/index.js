@@ -18,8 +18,30 @@ const customerStories = [
 ];
 document.addEventListener("readystatechange", () => {
   if (document.readyState == "complete") {
-    initContactForm('contactForm');
+    initContactForm("contactForm");
     const slider = new Slider(customerStories);
     slider.initSlider();
   }
+});
+
+const customersPlayButton = document.getElementById("customers__play-button");
+customersPlayButton.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  document.getElementById("customers-iframe").src += "?autoplay=1";
+  document.getElementById("customers-iframe").classList.remove("hidden");
+  document.getElementById("customers-cover").classList.add("hidden");
+  document
+    .getElementById("customers-player")
+    .classList.add("customers__player--playing");
+  customersPlayButton.classList.add("hidden");
+});
+
+const aboutPlayButton = document.getElementById("about-play-button");
+aboutPlayButton.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  document.getElementById("about-iframe").src += "?autoplay=1";
+  document.getElementById("about-iframe").classList.remove("hidden");
+  document.getElementById("about-cover").classList.add("hidden");
+  document.getElementById("about-video").classList.add("about__video--playing");
+  aboutPlayButton.classList.add("hidden");
 });
