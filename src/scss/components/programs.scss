@@ -5,6 +5,8 @@
   width: 100%;
   margin: 0 auto;
   background: $cl-blue;
+  min-height: 0;
+  padding: 4rem 0 8rem 0;
   &__body {
     display: flex;
     justify-content: center;
@@ -60,9 +62,12 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 12rem;
-    height: 12rem;
+    width: 100%;
+    aspect-ratio: 4 / 3;
     overflow: hidden;
+    & img {
+      object-fit: cover;
+    }
   }
   &__cuestion {
     min-height: 8rem;

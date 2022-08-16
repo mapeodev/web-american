@@ -81,25 +81,30 @@ class Slider {
   }
 
   #updateElementClasses() {
-    this.sliderItems[this.activeSlider].classList.add("customer-stories__item");
-    this.sliderItems[this.activeSlider].classList.add("customers__message-box");
-    this.sliderItems[this.activeSlider].classList.add(
-      "customer-stories__item--active"
-    );
-    this.sliderItems[this.previousSlider].classList.add(
-      "customer-stories__item"
-    );
-    this.sliderItems[this.previousSlider].classList.add(
-      "customers__message-box"
-    );
-    this.sliderItems[this.previousSlider].classList.add(
-      "customer-stories__item--left"
-    );
-    this.sliderItems[this.nextSlider].classList.add("customer-stories__item");
-    this.sliderItems[this.nextSlider].classList.add("customers__message-box");
-    this.sliderItems[this.nextSlider].classList.add(
-      "customer-stories__item--right"
-    );
+    this.sliderItems.forEach((element, index) => {
+      switch (index) {
+        case this.activeSlider:
+          element.classList.add("customers__message-box");
+          element.classList.add("customer-stories__item");
+          element.classList.add("customer-stories__item--active");
+          break;
+        case this.previousSlider:
+          element.classList.add("customer-stories__item");
+          element.classList.add("customers__message-box");
+          element.classList.add("customer-stories__item--left");
+          break;
+        case this.nextSlider:
+          element.classList.add("customer-stories__item");
+          element.classList.add("customers__message-box");
+          element.classList.add("customer-stories__item--right");
+          break;
+        default:
+          element.classList.add("customer-stories__item");
+          element.classList.add("customers__message-box");
+          element.classList.add("hidden");
+          break;
+      }
+    });
   }
 
   initSlider() {

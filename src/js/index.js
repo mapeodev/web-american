@@ -4,16 +4,23 @@ import Slider from "./modules/Slider";
 const customerStories = [
   {
     message:
-      "Gracias a “ALA” no hubiera logrado mi sueño de trabajar en el extranjero.",
-    author: "Carlos Carreño",
+      "Puedo dar fe de que el programa regular es personalizado, ya que, empecé desde 0 y ahora puedo conversar con nativos.",
+    author: "Elena Zavaleta",
   },
   {
-    message: "Mensaje de usuario numero 2",
-    author: "Carlos Carreño",
+    message:
+      "Su programa realmente es intensivo, mejoré mi fluidez, pasé mi entrevista en inglés y logré mi ascenso.",
+    author: "Juan Vela",
   },
   {
-    message: "tercer mensaje de usuario",
-    author: "Carlos Carreño",
+    message:
+      "Recomiendo el taller con nativos, perfeccioné mi pronunciación y conseguí una media beca para mi maestría en USA.",
+    author: "Sofía Martínez",
+  },
+  {
+    message:
+      "Recomiendo su programa de certificación, tenía dudas al principio, pero gracias a ALA, logré un puntaje de 96 en el TOEFL.",
+    author: "Manuel López",
   },
 ];
 
