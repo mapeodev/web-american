@@ -159,6 +159,9 @@
 }
 
 .customer-stories {
+  @media screen and (max-width: $breakpoint-laptop) {
+    min-height: 35rem;
+  }
   &__items {
     position: relative;
     margin-top: 2rem;
@@ -167,6 +170,9 @@
     justify-content: center;
     width: 50rem;
     min-height: 22rem;
+    @media screen and (max-width: $breakpoint-laptop) {
+      min-height: 32rem;
+    }
   }
   &__item {
     position: relative;
