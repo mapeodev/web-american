@@ -44,6 +44,15 @@
     margin-top: 3rem;
     @media screen and (max-width: $breakpoint-tablet) {
       margin-top: 0;
+      font-size: 0.7rem;
+      align-items: center;
+      & .faIcon {
+        width: 0.7rem;
+        height: 0.7rem;
+        font-size: 0.6rem;
+        aspect-ratio: 1 / 1;
+        margin-left: -0.7rem;
+      }
     }
   }
   &__description {
@@ -55,7 +64,7 @@
     align-items: flex-start;
     @media screen and (max-width: $breakpoint-tablet) {
       margin: auto 1rem;
-      margin-top: 2rem;
+      margin-top: 0.5rem;
     }
   }
   &__contactForm {
@@ -124,7 +133,7 @@
     }
     @media screen and (max-width: $breakpoint-tablet) {
       margin: 1rem 0 0 0;
-      text-align: center;
+      text-align: left;
       & h1 {
         margin: 0;
         font-size: 2rem;
