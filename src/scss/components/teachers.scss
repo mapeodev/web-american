@@ -59,7 +59,8 @@
       width: 100%;
       aspect-ratio: 1 / 1;
       & img {
-        object-fit: contain;
+        object-fit: cover;
+        object-position: top;
       }
     }
     &-details {
@@ -81,6 +82,11 @@
       width: 2.5rem;
       margin: 1rem 0;
       aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      overflow: hidden;
+      & img {
+        object-fit: cover;
+      }
     }
     &-button {
       position: absolute;

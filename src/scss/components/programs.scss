@@ -38,8 +38,8 @@
       padding: .5rem;
     }
     @media screen and (max-width: $breakpoint-tablet) {
-      min-height: 12rem;
-      margin-top: 1.5rem;
+      min-height: 8rem;
+      margin-top: 3rem;
       & h2 {
         padding: 0rem;
       }
@@ -99,10 +99,10 @@
     min-height: 3rem;
     height: 3rem;
     margin-top: 5rem;
-
     @media screen and (max-width: $breakpoint-tablet) {
       min-height: 2rem;
       height: 2rem;
+      margin-top: 2rem;
     }
   }
 
