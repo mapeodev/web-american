@@ -9,7 +9,7 @@
     </title>
     <link
       rel="shortcut icon"
-      href="assets/icons/favicon.png"
+      href="assets/icons/favicon.ico"
       type="image/x-icon"
     />
     <script
@@ -31,17 +31,21 @@
             >
               <div class="presentation__contactInfo">
                 <div>
-                  <i
-                    class="faIcon faIcon--circle faIcon--black fas fa-phone"
-                  ></i
+                  <span
+                    class="faIcon faIcon--circle faIcon--black"
+                    style="display: inline-flex"
+                  >
+                    <i class="fas fa-phone reverse-y"></i></span
                   ><a href="tel:+51987890386">987 890 386</a>
                 </div>
                 <div>
-                  <i
-                    class="faIcon faIcon--circle faIcon--black fas fa-envelope"
-                  ></i
-                  ><a href="mailto:americanlanguage@gmail.com"
-                    >americanlanguage@gmail.com</a
+                  <span
+                    class="faIcon faIcon--circle faIcon--black"
+                    style="display: inline-flex"
+                  >
+                    <i class="fas fa-envelope"></i></span
+                  ><a href="mailto:americanlanguageacademyperu@gmail.com"
+                    >americanlanguageacademyperu@gmail.com</a
                   >
                 </div>
               </div>
@@ -55,29 +59,22 @@
             </div>
             <div class="presentation__benefitsList">
               <p class="presentation__text">
-                Nuestra metodología práctica y conversacional te ayudará a ser
-                capaz de
+                Nuestra metodología es totalmente práctica y te ayudará a:
               </p>
               <ul class="presentation__list">
                 <li>
-                  <i class="faIcon faIcon--circle faIcon--blue fas fa-check"></i
-                  >Mejorar tu fluidez con Nativos.
+                  <span class="faIcon faIcon--circle faIcon--blue">
+                    <i class="fas fa-check"></i
+                  ></span>
+                  Mejorar tu fluidez con Profesores Nativos y Bilingües.
                 </li>
                 <li>
                   <i class="faIcon faIcon--circle faIcon--blue fas fa-check"></i
-                  >Postular a entrevistas laborales en inglés.
+                  >Trabajar de manera remota en el extranjero.
                 </li>
                 <li>
                   <i class="faIcon faIcon--circle faIcon--blue fas fa-check"></i
-                  >Trabajar presencial o de manera remota en el extranjero.
-                </li>
-                <li>
-                  <i class="faIcon faIcon--circle faIcon--blue fas fa-check"></i
-                  >Postular a becas de estudio internacionales.
-                </li>
-                <li>
-                  <i class="faIcon faIcon--circle faIcon--blue fas fa-check"></i
-                  >Socializar con profesionales nativos de otros países.
+                  >Socializar con profesionales de otros países.
                 </li>
               </ul>
             </div>
@@ -86,18 +83,21 @@
         <div id="contacto" class="section__column">
           <div class="presentation__contactForm">
             <div class="contactForm">
-              <h1 class="contactForm__title">Agenda una asesoría gratis</h1>
+              <h1 class="contactForm__title">
+                Inicia tu aprendizaje ahora
+              </h1>
               <p class="contactForm__description">
                 Regístrate y nuestros profesores te explicarán nuestro método y
                 cómo podemos ayudarte.
               </p>
-              <form class="form contactForm__form">
+              <form id="contactForm" class="form contactForm__form">
                 <label class="form__label">Nombre</label>
                 <input
                   class="form__input"
                   placeholder="Nombre"
                   type="text"
                   name="names"
+                  required
                 />
                 <label class="form__label">E-mail</label>
                 <input
@@ -105,6 +105,9 @@
                   placeholder="E-mail"
                   type="email"
                   name="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="Por favor, ingrese un correo válido."
+                  required
                 />
                 <label class="form__label">Teléfono</label>
                 <input
@@ -112,6 +115,8 @@
                   placeholder="Teléfono"
                   type="tel"
                   name="phone"
+                  pattern="[0-9]{9}"
+                  title="Por favor, ingrese un teléfono válido."
                 />
                 <label class="form__label"
                   >Cuéntanos qué meta lograrás cuando domines el inglés</label
@@ -121,6 +126,7 @@
                   placeholder="Cuéntanos qué meta lograrás cuando domines el inglés"
                   name="message"
                   rows="4"
+                  required
                 ></textarea>
                 <button class="button form__button" type="submit">
                   Agenda una asesoría gratis
@@ -136,7 +142,27 @@
           <h2>¿Cómo te podemos ayudar?</h2>
         </div>
         <div class="section__body about__body">
-          <div class="about__video">AQUÍ DEBERÍA HABER UN VIDEO</div>
+          <div class="about__video" id="about-video">
+            <img
+              id="about-cover"
+              class="about__video-cover"
+              src="assets/img/video.png"
+            />
+            <button class="about__video-button" id="about-play-button">
+              <i class="fas fa-solid fa-play"></i>
+            </button>
+            <iframe
+              id="about-iframe"
+              class="iframe hidden"
+              width="949"
+              height="534"
+              src="https://www.youtube.com/embed/wke-QliiaxY"
+              title="Anuncio American Language Academy"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
           <div class="section__footer benefits__call-to-action">
             <a href="#contacto" class="button">Agenda una asesoría gratis</a>
           </div>
@@ -145,15 +171,15 @@
       <section id="programs" class="section section--with-title programs">
         <div class="target"></div>
         <div class="section__column section__column--title programs__title">
-          <h2>ENCUENTRA EL MEJOR PROGRAMA PARA TI</h2>
+          <h2>¿Mejorar tu fluidez y pronunciación?</h2>
         </div>
         <div class="section__body programs__body">
           <div class="program">
             <div class="program__cuestion">
-              <h3>¿Quieres empezar desde 0?</h3>
+              <h3>¿Quieres iniciar ahora?</h3>
             </div>
             <div class="image program__image">
-              <img src="assets/img/fondito%20video.png" alt="Program Image" />
+              <img src="assets/img/pr-regular.png" alt="Programa regular" />
             </div>
             <div class="program__name">
               <h4>Programa regular</h4>
@@ -166,10 +192,10 @@
           </div>
           <div class="program">
             <div class="program__cuestion">
-              <h3>¿Buscas acelerar tu fluidez de inglés?</h3>
+              <h3>¿Buscas acelerar tu aprendizaje?</h3>
             </div>
             <div class="image program__image">
-              <img src="assets/img/fondito%20video.png" alt="Program Image" />
+              <img src="assets/img/pr-intensivo.png" alt="Programa intensivo" />
             </div>
             <div class="program__name">
               <h4>Programa intensivo</h4>
@@ -185,7 +211,10 @@
               <h3>¿Reforzar tu domino de inglés?</h3>
             </div>
             <div class="image program__image">
-              <img src="assets/img/fondito%20video.png" alt="Program Image" />
+              <img
+                src="assets/img/taller-conv.png"
+                alt="Taller de conversación con nativos"
+              />
             </div>
             <div class="program__name">
               <h4>Taller de conversación con nativos</h4>
@@ -198,10 +227,13 @@
           </div>
           <div class="program">
             <div class="program__cuestion">
-              <h3>¿Superar un examen de certificado?</h3>
+              <h3>¿Aprobar un examen de certificación?</h3>
             </div>
             <div class="image program__image">
-              <img src="assets/img/fondito%20video.png" alt="Program Image" />
+              <img
+                src="assets/img/prep-exa.png"
+                alt="Preparación para exámenes internaconales"
+              />
             </div>
             <div class="program__name">
               <h4>Preparación para exámenes internaconales</h4>
@@ -224,41 +256,161 @@
               <img src="assets/img/1.png" alt="profesores" class="image" />
             </div>
             <p class="benefit__text">
-              Profesores nativos con inmersión lingüística en USA y Canadá.
+              Profesores Nativos y Bilingües
             </p>
-          </div>
-          <div class="benefit">
-            <div class="benefit__image">
-              <img src="assets/img/2.png" alt="tutoría" class="image" />
-            </div>
-            <p class="benefit__text">Tutoría y seguimiento personalizado.</p>
           </div>
           <div class="benefit">
             <div style="width: 8rem" class="benefit__image">
               <img src="assets/img/3.png" alt="grupo reducido" class="image" />
             </div>
             <p class="benefit__text">
-              Grupos reducidos exclusivos para profesionales.
+              Grupos reducidos exclusivos
             </p>
           </div>
           <div class="benefit">
             <div class="benefit__image">
               <img src="assets/img/4.png" alt="conversación" class="image" />
             </div>
-            <p class="benefit__text">Talleres de conversación con nativos.</p>
+            <p class="benefit__text">Talleres de conversación con Nativos</p>
           </div>
           <div class="benefit">
             <div class="benefit__image">
               <img src="assets/img/5.png" alt="person logo" class="image" />
             </div>
             <p class="benefit__text">
-              Acceso a eLearning interactivo de Pearson English portal.
+              Acceso Pearson English portal
             </p>
           </div>
         </div>
         <div class="section__footer benefits__call-to-action">
           <a href="#contacto" class="button">Agenda una asesoría gratis</a>
         </div>
+      </section>
+      <section class="section teachers">
+        <!-- Sección de tarjetas de docentes -->
+        <div class="section__title teachers__title">
+          <h2>CONOCE A NUESTROS DOCENTES NATIVOS Y BILINGÜES</h2>
+        </div>
+        <div class="teachers__cards">
+          <div class="teachers__card" id="card-1">
+            <div class="teachers__card-face teachers__card-front">
+              <div class="teachers__card-image">
+                <img src="assets/img/Christopher.png" />
+              </div>
+              <div class="teachers__card-details">
+                <div class="teachers__card-name">Christopher K.</div>
+                <div class="teachers__card-location">Canberra, Australia</div>
+                <div class="teachers__card-flag">
+                  <img src="assets/img/australia.png" />
+                </div>
+              </div>
+              <button id="flip-card-1" class="teachers__card-button">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+            <div class="teachers__card-face teachers__card-back">
+              <h3 class="teachers__card-btitle">Christopher Kennedy</h3>
+              <p class="teachers__card-btext">
+                Docente con 07 años, cuenta con experiencia dictando clases en
+                línea a estudiantes de Asia y Latinoamérica. Combina su tiempo
+                entre la enseñanza y viajes.
+              </p>
+              <button id="reset-card-1" class="teachers__card-button--reset">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+          </div>
+
+          <div class="teachers__card" id="card-2">
+            <div class="teachers__card-face teachers__card-front">
+              <div class="teachers__card-image">
+                <img src="assets/img/Claudia Cueva.png" />
+              </div>
+              <div class="teachers__card-details">
+                <div class="teachers__card-name">Claudia Cueva</div>
+                <div class="teachers__card-location">Trujillo, Perú</div>
+                <div class="teachers__card-flag">
+                  <img src="assets/img/peru.png" />
+                </div>
+              </div>
+              <button id="flip-card-2" class="teachers__card-button">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+            <div class="teachers__card-face teachers__card-back">
+              <h3 class="teachers__card-btitle">Claudia Cueva</h3>
+              <p class="teachers__card-btext">
+                Su estancia en Estados Unidos le ha permitido conocer y aprender
+                de la cultura americana. Durante sus clases comparte esta
+                enriquecedora experiencia.
+              </p>
+              <button id="reset-card-2" class="teachers__card-button--reset">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+          </div>
+          <div class="teachers__card" id="card-3">
+            <div class="teachers__card-face teachers__card-front">
+              <div class="teachers__card-image">
+                <img src="assets/img/Justin.png" />
+              </div>
+              <div class="teachers__card-details">
+                <div class="teachers__card-name">Justin Laucirica</div>
+                <div class="teachers__card-location">Florida, USA</div>
+                <div class="teachers__card-flag">
+                  <img src="assets/img/bandera.png" />
+                </div>
+              </div>
+              <button id="flip-card-3" class="teachers__card-button">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+            <div class="teachers__card-face teachers__card-back">
+              <h3 class="teachers__card-btitle">Justin Laucirica</h3>
+              <p class="teachers__card-btext">
+                Después de pasar un buen tiempo en Latinoamérica decidió
+                convertirse en Docente. Lo que más disfruta de las clases es el
+                intercambio de cultura e ideas.
+              </p>
+              <button id="reset-card-3" class="teachers__card-button--reset">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+          </div>
+          <div class="teachers__card" id="card-4">
+            <div class="teachers__card-face teachers__card-front">
+              <div class="teachers__card-image">
+                <img src="assets/img/Pamela.png" />
+              </div>
+              <div class="teachers__card-details">
+                <div class="teachers__card-name">Pamela Afiler</div>
+                <div class="teachers__card-location">Trujillo, Perú</div>
+                <div class="teachers__card-flag">
+                  <img src="assets/img/peru.png" />
+                </div>
+              </div>
+              <button id="flip-card-4" class="teachers__card-button">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+            <div class="teachers__card-face teachers__card-back">
+              <h3 class="teachers__card-btitle">Pamela Afiler</h3>
+              <p class="teachers__card-btext">
+                Trabajó en el Sector Turismo en Estados Unidos durante 02 años.
+                Tiene amplia experiencia como profesora de adultos.
+              </p>
+              <button id="reset-card-4" class="teachers__card-button--reset">
+                <img src="assets/img/ver.png" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <p>
+          Los profesionales que dominan el inglés pueden ganar entre 26%
+          y 50% más frente a quienes no lo manejan, según Harvard Business Review
+        </p>
       </section>
       <section class="section brands">
         <div class="section__title brands__title">
@@ -295,20 +447,35 @@
           </div>
         </div>
       </section>
-      <section class="info">
-        <p>
-          Los profesionales que dominan un inglés fluído pueden ganar entre 26%
-          y 50% más de su salario actual según Harvard Business Review.
-        </p>
-      </section>
       <section class="section section--with-title customers">
         <div class="section__column--title customers__title">
           <h2>Nuestros alumnos confían en nosotros</h2>
         </div>
         <div class="section__column">
           <div class="customers__video">
-            <div class="customers__player">
-              <img src="assets/img/video.png" />
+            <div class="customers__player" id="customers-player">
+              <img
+                id="customers-cover"
+                class="customers__player-video-cover"
+                src="assets/img/video2.png"
+              />
+              <button
+                class="customers__player-button"
+                id="customers__play-button"
+              >
+                <i class="fas fa-solid fa-play"></i>
+              </button>
+              <iframe
+                id="customers-iframe"
+                class="iframe hidden"
+                width="350"
+                height="622"
+                src="https://www.youtube.com/embed/HW5pXkYV3Sc"
+                title="Testimonio Max Yanac Países Bajos"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>
@@ -324,7 +491,7 @@
       </section>
       <section class="info">
         <p class="footer-message">
-          Conversa con nuestros asesores descubre cómo te podemos ayudar.
+          Conversa con nuestros asesores e inicia tu carrera con el inglés
         </p>
         <div class="info__button">
           <a href="#contacto" class="button button--bordered button--small"

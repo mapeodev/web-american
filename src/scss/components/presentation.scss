@@ -1,6 +1,14 @@
 .presentation {
+  padding: 0 1rem;
   padding-bottom: 2rem;
   grid-template-rows: minmax(auto, 6rem);
+  width: 90%;
+  margin: 0 auto;
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding-bottom: 0;
+    width: 100%;
+    padding: 0;
+  }
   &__header {
     position: relative;
     display: flex;
@@ -12,7 +20,7 @@
     margin-top: 1rem;
     @media screen and (max-width: $breakpoint-tablet) {
       flex-direction: column;
-      margin: 2rem 0;
+      margin: 0;
     }
     &__column {
       width: 50%;
@@ -33,26 +41,43 @@
     flex-direction: column;
     align-items: flex-start;
     width: fit-content;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-top: 0;
+      font-size: 0.7rem;
+      align-items: center;
+      & .faIcon {
+        width: 0.7rem;
+        height: 0.7rem;
+        font-size: 0.6rem;
+        aspect-ratio: 1 / 1;
+        margin-left: -0.7rem;
+      }
+    }
   }
   &__description {
-    margin: auto 3rem;
+    margin: 1rem 1rem;
+    margin-left: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     @media screen and (max-width: $breakpoint-tablet) {
       margin: auto 1rem;
+      margin-top: 0.5rem;
     }
   }
   &__contactForm {
-
+    width: 100%;
   }
   &__list {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 2.5rem;
     & li {
       position: relative;
-      margin-left: 2.5rem;
+      margin-left: 2rem;
     }
     & .faIcon {
       position: absolute;
@@ -64,14 +89,39 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      & i:before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        top: .4rem;
+      }
     }
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      width: 100%;
+      & li {
+        position: relative;
+        margin-left: 2rem;
+        margin-bottom: 0.8rem;
+      }
+      & .faIcon {
+        position: absolute;
+        left: -2rem;
+        top: .2rem;
+        height: 0.9rem;
+      }
+    }
+    
   }
 
   &__text {
-    font-family: $bebasNeue;
-    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
     @media screen and (max-width: $breakpoint-tablet) {
       text-align: center;
+      font-size: 1rem;
     }
   }
   &__title {
@@ -82,21 +132,24 @@
       margin: 0;
     }
     @media screen and (max-width: $breakpoint-tablet) {
-      margin: 1rem 0;
-      text-align: center;
+      margin: 1rem 0 0 0;
+      text-align: left;
       & h1 {
         margin: 0;
+        font-size: 2rem;
+        line-height: 2rem;
       }
     }
   }
 
   &__logo {
     position: relative;
-    width: 14rem;
+    width: 12rem;
     aspect-ratio: 16 / 9;
     overflow: hidden;
     margin: 3rem;
     margin-top: 6rem;
+    margin-left: 3rem;
     @media screen and (max-width: $breakpoint-tablet) {
       margin: 0 auto;
     }
