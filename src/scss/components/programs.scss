@@ -77,8 +77,14 @@
     min-height: 8rem;
     height: 8rem;
     @media screen and (max-width: $breakpoint-tablet) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       min-height: 5rem;
       height: 5rem;
+      & h3 {
+        margin: 0;
+      }
     }
   }
   &__name {
@@ -86,6 +92,14 @@
     text-transform: uppercase;
     min-height: 3rem;
     height: 3rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & h4 {
+        margin: 0;
+      }
+    }
   }
   &__title {
     min-height: 3rem;
@@ -102,7 +116,7 @@
     @media screen and (max-width: $breakpoint-tablet) {
       min-height: 2rem;
       height: 2rem;
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
   }
 
